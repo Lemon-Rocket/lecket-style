@@ -1,0 +1,5 @@
+name: lecket_style
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+dev_dependencies:
+  sass: ^1.37.5
