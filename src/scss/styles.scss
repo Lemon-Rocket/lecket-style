@@ -1,0 +1,9 @@
+@use  "./root" as root;
+@use  "./colors.scss";
+
+body {
+    background-color: root.$background-color;
+    font-family: root.$font-family;
+}
+
+@import 'header';

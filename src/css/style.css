@@ -1,11 +1,11 @@
 @font-face {
     font-family: Poppins;
-    src: url(fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: Poppins;
-    src: url(fonts/Poppins-SemiBold.ttf);
+    src: url(../fonts/Poppins-SemiBold.ttf);
     font-weight: 600;
 }
 
@@ -42,7 +42,7 @@ body {
     /* justify-content: center; */
 }
 
-.input{
+.header-search{
     background: #353440;
     border: 2px solid #353440;
     width: 60%;

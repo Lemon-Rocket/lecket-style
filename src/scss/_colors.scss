@@ -1,0 +1,12 @@
+@use  "./root" as root;
+
+.primary-color {
+    color: root.$primary-color;
+}
+
+.secondary-color {
+    color: root.$secondary-color;
+    &::placeholder{
+        color: root.$secondary-color;
+    }
+}
