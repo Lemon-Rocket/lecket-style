@@ -1,12 +1,16 @@
-@use  "./root" as root;
+@use "./root" as root;
 
 .primary-color {
-    color: root.$primary-color;
+  color: root.$primary-color;
 }
 
 .secondary-color {
+  color: root.$secondary-color;
+  &::placeholder {
     color: root.$secondary-color;
-    &::placeholder{
-        color: root.$secondary-color;
-    }
+  }
+}
+
+.background-card-color {
+  background-color: root.$background-card;
 }

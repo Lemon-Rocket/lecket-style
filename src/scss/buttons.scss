@@ -1,0 +1,17 @@
+@use "./root" as root;
+
+.button {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: root.$font-family;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 4px 2px;
+    width: 50%;
+    padding: 14px 32px;
+    &:hover {
+        background-color: root.$background-color;
+    }
+}

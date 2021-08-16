@@ -18,13 +18,29 @@
   color: #808191;
 }
 
+.background-card-color {
+  background-color: #252836;
+}
+
 body {
   background-color: #1f1d2c;
   font-family: Poppins;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
 .header-content {
-  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1f1d2c;
 }
 
 .header-row {
@@ -49,4 +65,129 @@ body {
   height: 35%;
   outline: none;
   border-radius: 5px;
+}
+
+.header-auth {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  margin-top: 6rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 1;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.main-section {
+  margin-left: 15%;
+}
+
+.discover-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 40% 40%;
+}
+
+.discover-item {
+  grid-column: span 1;
+}
+
+.most-watches-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+
+.most-watches-item {
+  grid-column: span 1;
+}
+
+.card {
+  border-radius: 20px;
+}
+.card .card-img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+  margin: auto;
+  width: 80%;
+  margin-top: -5%;
+  padding-bottom: 1%;
+}
+
+.card-img {
+  border-radius: 20px;
+}
+
+.size-width-s {
+  width: 18.75rem;
+}
+
+.size-height-s {
+  height: 12.5rem;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+.button {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Poppins;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 4px 2px;
+  width: 50%;
+  padding: 14px 32px;
+}
+.button:hover {
+  background-color: #1f1d2c;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
