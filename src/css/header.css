@@ -25,8 +25,15 @@
   border: 2px solid #353440;
   width: 60%;
   height: 35%;
+  font-size: 18px;
   outline: none;
   border-radius: 5px;
+}
+.header-search:focus {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.4s;
 }
 
 .header-auth {

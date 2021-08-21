@@ -23,12 +23,19 @@
 }
 
 .header-search {
-  background: #353440;
-  border: 2px solid #353440;
+  background: root.$third-color;
+  border: 2px solid root.$third-color;
   width: 60%;
   height: 35%;
+  font-size: 18px;
   outline: none;
   border-radius: 5px;
+  &:focus{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .4s;
+  }
 }
 
 .header-auth {
