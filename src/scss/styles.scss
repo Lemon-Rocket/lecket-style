@@ -1,6 +1,17 @@
 @use "./root" as root;
 @use "./colors.scss";
 
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
 body {
   background-color: root.$background-color;
   font-family: root.$font-family;
@@ -8,6 +19,7 @@ body {
 
 @import "header";
 @import "main";
+@import "sidenav";
 @import "card";
 @import "buttons";
 @import "icons";

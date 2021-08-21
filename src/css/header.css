@@ -1,12 +1,3 @@
-@font-face {
-  font-family: Poppins;
-  src: url(../fonts/Poppins-Regular.ttf);
-}
-@font-face {
-  font-family: Poppins;
-  src: url(../fonts/Poppins-SemiBold.ttf);
-  font-weight: 600;
-}
 .header-content {
   position: fixed;
   top: 0;
