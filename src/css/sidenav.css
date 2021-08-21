@@ -35,3 +35,8 @@
 .side-menu a:not(:last-child) {
   margin-bottom: 20px;
 }
+
+.active {
+  color: #FFD15C;
+  font-weight: bold;
+}

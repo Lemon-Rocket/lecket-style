@@ -12,6 +12,17 @@
 
 .header-title {
   width: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-title h1 {
+  margin-right: -10px;
+}
+
+.header-title img {
+  z-index: -1;
 }
 
 .header-input {
