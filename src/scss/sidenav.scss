@@ -29,11 +29,14 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    padding: 10px 10px 10px 0px;
     &:hover {
       color: #fff;
+      border-radius: 10px;
+      background: root.$third-color;
     }
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -41,4 +44,7 @@
 .active {
   color: root.$yellow-color;
   font-weight: bold;
+  &:hover {
+    color: root.$yellow-color !important;
+  }
 }

@@ -52,4 +52,30 @@
   width: 25%;
   display: flex;
   align-items: center;
+  ul {
+    display: none;
+    color: white;
+    position: absolute; 
+    top: 50px;
+  }
+  ul a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: -40px;
+    &:hover {
+      color: #fff;
+      border-radius: 10px;
+      background: root.$third-color;
+    }
+  }
+  button:hover > ul{
+    display: flex;
+    background-color: root.$background-card;
+    border-radius: 12px;
+    width: 250px;
+    margin-left: -35px;
+    flex-direction: column;
+  }
 }

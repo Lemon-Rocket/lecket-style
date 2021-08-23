@@ -81,6 +81,32 @@ body {
   display: flex;
   align-items: center;
 }
+.header-auth ul {
+  display: none;
+  color: white;
+  position: absolute;
+  top: 50px;
+}
+.header-auth ul a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: -40px;
+}
+.header-auth ul a:hover {
+  color: #fff;
+  border-radius: 10px;
+  background: #353440;
+}
+.header-auth button:hover > ul {
+  display: flex;
+  background-color: #252836;
+  border-radius: 12px;
+  width: 250px;
+  margin-left: -35px;
+  flex-direction: column;
+}
 
 .main-content {
   margin-top: 6rem;
@@ -141,17 +167,23 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  padding: 10px 10px 10px 0px;
 }
 .side-menu a:hover {
   color: #fff;
+  border-radius: 10px;
+  background: #353440;
 }
 .side-menu a:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .active {
   color: #FFD15C;
   font-weight: bold;
+}
+.active:hover {
+  color: #FFD15C !important;
 }
 
 .card {
@@ -194,6 +226,7 @@ body {
 }
 .button:hover {
   background-color: #1f1d2c;
+  font-weight: bold;
 }
 
 .center-spinner {

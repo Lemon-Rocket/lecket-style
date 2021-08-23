@@ -13,5 +13,6 @@
     padding: 14px 32px;
     &:hover {
         background-color: root.$background-color;
+        font-weight: bold;
     }
 }
