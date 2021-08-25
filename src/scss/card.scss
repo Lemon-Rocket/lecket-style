@@ -1,7 +1,22 @@
+@use "./root" as root;
+
 .card {
   border-radius: 20px;
+  transition: all 0.3s ease-out;
   .card-img {
     border-radius: 20px 20px 0px 0px;
+    &:hover {
+      opacity: 0.3;
+      transition: 0.5s ease;
+    }
+  }
+  &:hover {
+    transform: translateY(-5%);
+    transition: 0.5s;
+    .primary-color {
+      transition: color 0.5s;
+      color: root.$yellow-color;
+    }
   }
 }
 
@@ -16,10 +31,14 @@
   border-radius: 20px;
 }
 
-.size-width-s{
+.size-width-s {
   width: 18.75rem;
 }
 
-.size-height-s{
+.size-height-s {
   height: 12.5rem;
+}
+
+.card-click {
+  text-decoration: none;
 }

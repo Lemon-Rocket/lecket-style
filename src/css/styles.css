@@ -188,9 +188,22 @@ body {
 
 .card {
   border-radius: 20px;
+  transition: all 0.3s ease-out;
 }
 .card .card-img {
   border-radius: 20px 20px 0px 0px;
+}
+.card .card-img:hover {
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-5%);
+  transition: 0.5s;
+}
+.card:hover .primary-color {
+  transition: color 0.5s;
+  color: #FFD15C;
 }
 
 .card-content {
@@ -210,6 +223,10 @@ body {
 
 .size-height-s {
   height: 12.5rem;
+}
+
+.card-click {
+  text-decoration: none;
 }
 
 .button {
@@ -253,32 +270,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-.arrow {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 1px;
-  margin-bottom: 1px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
