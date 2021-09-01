@@ -6,22 +6,49 @@
   margin-left: 15%;
 }
 
-.discover-gallery{
+.discover-gallery {
   display: grid;
   gap: 1rem;
   grid-template-columns: 40% 40%;
 }
-.discover-item{
+.discover-item {
   grid-column: span 1;
 }
 
-.most-watches-gallery{
+.most-watches-gallery {
   display: grid;
   gap: 1rem;
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
 }
 
-.most-watches-item{
+.most-watches-item {
   grid-column: span 1;
+}
+
+.genres-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 19rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 34rem), 1fr));
+}
+
+.genres-item {
+  grid-column: span 1;
+}
+
+.genre-container {
+  position: relative;
+  transition: all 0.5s;
+  h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.8rem;
+    text-shadow: 0 0 3px #000000;
+    right: 5rem;
+  }
+  &:hover {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+  }
 }

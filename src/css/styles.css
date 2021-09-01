@@ -139,6 +139,33 @@ body {
   grid-column: span 1;
 }
 
+.genres-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 19rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 34rem), 1fr));
+}
+
+.genres-item {
+  grid-column: span 1;
+}
+
+.genre-container {
+  position: relative;
+  transition: all 0.5s;
+}
+.genre-container h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.8rem;
+  text-shadow: 0 0 3px #000000;
+  right: 5rem;
+}
+.genre-container:hover {
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
 .sidenav {
   height: 100%;
   width: 15%;
