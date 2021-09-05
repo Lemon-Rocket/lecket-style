@@ -220,6 +220,10 @@ body {
   transition: all 0.3s ease-out;
 }
 .card .card-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 100% 10%;
   border-radius: 20px 20px 0px 0px;
 }
 .card .card-img:hover {
