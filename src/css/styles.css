@@ -286,7 +286,7 @@ body {
   flex-direction: column;
 }
 
-.spinner {
+.spinner-loading {
   margin-top: 20px;
   --size: 120px;
   --border: 8px;
