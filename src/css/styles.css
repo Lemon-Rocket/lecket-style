@@ -60,6 +60,13 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 860px) {
+  .header-input {
+    width: 85%;
+    flex-direction: row-reverse;
+    padding-right: 15%;
+  }
+}
 
 .header-search {
   background: #353440;
@@ -109,6 +116,11 @@ body {
   margin-left: -35px;
   flex-direction: column;
 }
+@media screen and (max-width: 860px) {
+  .header-auth {
+    display: none;
+  }
+}
 
 .main-content {
   margin-top: 6rem;
@@ -116,6 +128,11 @@ body {
 
 .main-section {
   margin-left: 15%;
+}
+@media screen and (max-width: 1200px) {
+  .main-section {
+    margin-left: 1%;
+  }
 }
 
 .discover-gallery {
@@ -137,6 +154,13 @@ body {
 
 .most-watches-item {
   grid-column: span 1;
+}
+@media screen and (max-width: 860px) {
+  .most-watches-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .genres-gallery {
@@ -175,6 +199,11 @@ body {
   left: 0;
   overflow-x: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .sidenav {
+    display: none;
+  }
+}
 
 .side-wrapper {
   padding: 4%;
@@ -208,11 +237,11 @@ body {
 }
 
 .active {
-  color: #FFD15C;
+  color: #ffd15c;
   font-weight: bold;
 }
 .active:hover {
-  color: #FFD15C !important;
+  color: #ffd15c !important;
 }
 
 .card {
@@ -236,7 +265,7 @@ body {
 }
 .card:hover .primary-color {
   transition: color 0.5s;
-  color: #FFD15C;
+  color: #ffd15c;
 }
 
 .card-content {
@@ -295,7 +324,7 @@ body {
   border-radius: 50%;
   position: relative;
   border: var(--border) solid #2d2d2d;
-  border-right: var(--border) solid #FDDC1E;
+  border-right: var(--border) solid #fddc1e;
   animation: spin 1s linear infinite;
 }
 

@@ -8,6 +8,9 @@
   top: 1;
   left: 0;
   overflow-x: hidden;
+  @media screen and (max-width: root.$medium) {
+    display: none;
+  }
 }
 
 .side-wrapper {

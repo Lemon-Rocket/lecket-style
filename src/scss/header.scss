@@ -16,21 +16,25 @@
 .header-title {
   width: 15%;
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: row;
 }
-.header-title h1{
+.header-title h1 {
   margin-right: -10px;
 }
-.header-title img{
+.header-title img {
   z-index: -1;
 }
-
 
 .header-input {
   width: 60%;
   display: flex;
   align-items: center;
+  @media screen and (max-width: root.$small) {
+    width: 85%;
+    flex-direction: row-reverse;
+    padding-right: 15%;
+  }
 }
 
 .header-search {
@@ -41,12 +45,12 @@
   font-size: 18px;
   outline: none;
   border-radius: 5px;
-  transition: all .4s;
-  &:focus{
+  transition: all 0.4s;
+  &:focus {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    transition: all .4s;
+    transition: all 0.4s;
   }
 }
 
@@ -57,7 +61,7 @@
   ul {
     display: none;
     color: white;
-    position: absolute; 
+    position: absolute;
     top: 50px;
   }
   ul a {
@@ -72,12 +76,15 @@
       background: root.$third-color;
     }
   }
-  button:hover > ul{
+  button:hover > ul {
     display: flex;
     background-color: root.$background-card;
     border-radius: 12px;
     width: 250px;
     margin-left: -35px;
     flex-direction: column;
+  }
+  @media screen and (max-width: root.$small) {
+    display: none;
   }
 }

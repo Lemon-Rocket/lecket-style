@@ -1,9 +1,14 @@
+@use "./root" as root;
+
 .main-content {
   margin-top: 6rem;
 }
 
 .main-section {
   margin-left: 15%;
+  @media screen and (max-width: root.$medium) {
+    margin-left: 1%;
+  }
 }
 
 .discover-gallery {
@@ -24,6 +29,11 @@
 
 .most-watches-item {
   grid-column: span 1;
+  @media screen and (max-width: root.$small) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .genres-gallery {
