@@ -49,6 +49,7 @@ body {
 
 .header-title h1 {
   margin-right: -10px;
+  cursor: pointer;
 }
 
 .header-title img {
@@ -133,16 +134,6 @@ body {
   .main-section {
     margin-left: 1%;
   }
-}
-
-.discover-gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 40% 40%;
-}
-
-.discover-item {
-  grid-column: span 1;
 }
 
 .most-watches-gallery {
