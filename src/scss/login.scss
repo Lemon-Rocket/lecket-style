@@ -1,0 +1,82 @@
+@use "./root" as root;
+
+.login-body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1800' height='1000' preserveAspectRatio='none' viewBox='0 0 1800 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1068%26quot%3b)' fill='none'%3e%3crect width='1800' height='1000' x='0' y='0' fill='rgba(31%2c 29%2c 44%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c797.228C154.32%2c823.846%2c322.542%2c791.182%2c449.914%2c700.08C575.117%2c610.53%2c650.042%2c461.604%2c680.273%2c310.67C707.308%2c175.693%2c634.622%2c47.622%2c607.633%2c-87.364C582.425%2c-213.442%2c599.978%2c-350.772%2c526.877%2c-456.542C450.333%2c-567.294%2c321.703%2c-622.552%2c199.182%2c-678.352C58.909%2c-742.237%2c-91.11%2c-856.377%2c-236.081%2c-804.02C-381.978%2c-751.329%2c-421.217%2c-565.026%2c-493.961%2c-428.02C-551.513%2c-319.627%2c-577.412%2c-205.075%2c-615.958%2c-88.561C-664.094%2c56.941%2c-804.883%2c199.33%2c-748.672%2c341.907C-693.049%2c482.993%2c-489.695%2c481.556%2c-360.121%2c560.359C-234.824%2c636.561%2c-144.516%2c772.301%2c0%2c797.228' fill='%2314131d'%3e%3c/path%3e%3cpath d='M1800 1603.978C1922.741 1609.836 2057.047 1627.134 2158.146 1557.286 2258.573 1487.902 2295.876 1358.568 2326.308 1240.357 2353.052 1136.473 2329.297 1032.048 2320.893 925.107 2311.834 809.8340000000001 2327.147 691.587 2275.067 588.352 2214.582 468.456 2133.848 339.62800000000004 2005.539 299.999 1877.038 260.31100000000004 1744.588 336.043 1619.695 385.937 1505.23 431.66499999999996 1379.579 474.048 1311.934 577.0889999999999 1246.738 676.4 1277.205 805 1266.8899999999999 923.35 1257.243 1034.045 1218.81 1144.041 1253.318 1249.662 1289.8229999999999 1361.394 1364.532 1460.186 1463.171 1524.116 1562.003 1588.171 1682.36 1598.363 1800 1603.978' fill='%232a273b'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1068'%3e%3crect width='1800' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.login-card {
+  z-index: 1;
+  position: relative;
+  background: root.$third-color;
+  width: 600px;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(#000000, 0.1);
+  box-sizing: border-box;
+  margin: 100px auto 10px;
+  overflow: hidden;
+  form {
+    margin: 2rem;
+  }
+  button {
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: bold;
+    background: root.$yellow-color;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+.form-group {
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+    border: 0;
+    caret-color: root.$yellow-color;
+    color: #fff;
+    padding: 12px 20px;
+    background: root.$background-card;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    &:focus {
+      font-size: 20px;
+      font-weight: bold;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.form-group-remember {
+  padding-bottom: 0.5rem;
+  label {
+    font-size: 12px;
+    text-transform: none;
+  }
+}
+
+.form-extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+  p {
+    margin-top: 0;
+  }
+  a {
+    color: #4285f4;
+    text-decoration: none;
+  }
+}
