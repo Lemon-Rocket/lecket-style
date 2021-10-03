@@ -60,6 +60,7 @@ body {
   width: 60%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 860px) {
   .header-input {
@@ -84,6 +85,34 @@ body {
   font-size: 20px;
   font-weight: bold;
   transition: all 0.4s;
+}
+
+.search-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin-top: 4.5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.search-result ul,
+.search-result li {
+  list-style-type: none;
+}
+.search-result ul {
+  padding: 0;
+}
+.search-result li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.search-result li:hover {
+  background-color: #f0f2fc;
+  cursor: pointer;
 }
 
 .header-auth {

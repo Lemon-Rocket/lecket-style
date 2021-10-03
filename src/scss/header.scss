@@ -31,6 +31,7 @@
   width: 60%;
   display: flex;
   align-items: center;
+  position: relative;
   @media screen and (max-width: root.$small) {
     width: 85%;
     flex-direction: row-reverse;
@@ -52,6 +53,34 @@
     font-size: 20px;
     font-weight: bold;
     transition: all 0.4s;
+  }
+}
+
+.search-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin-top: 4.5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  ul,
+  li {
+    list-style-type: none;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    &:hover {
+      background-color: #f0f2fc;
+      cursor: pointer;
+    }
   }
 }
 
